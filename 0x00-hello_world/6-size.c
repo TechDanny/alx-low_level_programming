@@ -1,7 +1,9 @@
 #include<stdio.h>
-int main(void)
-/* main: print the size of data types
+/*
+ * main - Entry point 
+ * Return: always 0 (success)
  */
+int main(void)
 {
 	char charType;
 	int zeroType;
