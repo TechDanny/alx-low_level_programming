@@ -1,9 +1,10 @@
 #include<stdio.h>
 /*
  * main-Entry point
+ * Description: this program executes the different sizes of data type
  * Return: always 0 (success)
  */
-int main(void)/*entry point*/
+int main(void)
 {
 	char charType;
 	int zeroType;
