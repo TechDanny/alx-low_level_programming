@@ -3,7 +3,7 @@
  * main-Entry point
  * Return: always 0 (success)
  */
-int main(void)
+int main(void)/*entry point*/
 {
 	char charType;
 	int zeroType;
