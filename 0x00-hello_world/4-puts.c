@@ -5,8 +5,9 @@
 #include<stdio.h>
 
 /**
- * main - Prints "\"Programming is like building a multilingual puzzle".
- * return: always 0.
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
  */
 int main(void)
 {
