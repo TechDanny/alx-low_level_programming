@@ -6,18 +6,31 @@
  */
 int main(void)
 {
-	for (int i = 0; i < 10; i++)
+	int i = '0';
+	int j = '0';
+
+	while (i <= '9')
 	{
-		for (int j = i + 1; j < 10; j++)
+		while (j = '9')
 		{
-			putchar(i + '0');
-			putchar(j + '0');
-			if (i < 8 || j < 9)
+			if (!(i > j || i == j))
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(i);
+				putchar(j);
+				if (i == '8' && j == '9')
+				{
+					putchar('\n');
+				}
+				else
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
+			j++;
 		}
+		j = '0';
+		i++;
 	}
 	return (0);
 }
