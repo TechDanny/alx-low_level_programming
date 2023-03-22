@@ -2,7 +2,7 @@
 
 /**
   * print_times_table - Prints a multiplication table up to param
-  * @c: The number to be treated
+  * @n: The number to be treated
   *
   * Return: Number matrix
   */
