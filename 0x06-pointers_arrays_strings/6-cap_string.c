@@ -2,30 +2,30 @@
 
 /**
  * cap_string - capitalizes all words of a string
- * @str: string
+ * @ptr: string
  *
  * return:returning value
  */
 
-char *cap_string(char *)
+char *cap_string(char *ptr)
 {
-	char *ptr = str;
-	int cap_next = 1;
+	int x = 1;
 
-	while (*ptr != '\0')
+
+	while (ptr[x] != '\0')
 	{
-	if (cap_next && islower(*ptr))
+	if (ptr[x] && islower(*ptr))
 	{
 	*ptr = toupper(*ptr);
 	}
-	cap_next = 0;
+	x = 0;
 	if (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' ||
 	*ptr == ',' || *ptr == ';' || *ptr == '.' ||
 	*ptr == '!' || *ptr == '?' || *ptr == '"' ||
 	*ptr == '(' || *ptr == ')' || *ptr == '{' ||
 	*ptr == '}')
 	{
-	cap_next = 1;
+	x = 1;
 	}
 	ptr++;
 	}
