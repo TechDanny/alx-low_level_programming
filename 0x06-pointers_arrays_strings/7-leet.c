@@ -1,47 +1,29 @@
 #include "main.h"
-#include<stdlib.h>
-#include<string.h>
 
 /**
- * leet - encodes a string into 1337
- * @str:character
+ * leet - encodes a string
+ * @s:string
  *
- *
- * return:returning the value
+ * Return:returns s
  */
 
-char *leet(char *str)
+char *leet(char *s)
 {
-	char *result = malloc(sizeof(char) * (strlen(str) + 1));
-	int i, j;
+	int i;
 
-	for (i = 0, j = 0; str[i] != '\0'; i++, j++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-	if (str[i] == 'a' || str[i] == 'A')
-	{
-	result[j] = '4';
+		while (s[i] == 'a' || s[i] == 'A')
+			s[i] = '4';
+		while (s[i] == 'e' || s[i] == 'E')
+			s[i] = '3';
+		while (s[i] == 'o' || s[i] == 'O')
+			s[i] = '0';
+		while (s[i] == 't' || s[i] == 'T')
+			s[i] = '7';
+		while (s[i] == 'l' || s[i] == 'L')
+			s[i] = '1';
 	}
-	else if (str[i] == 'e' || str[i] == 'E')
-	{
-	result[j] = '3';
-	}
-	else if (str[i] == 'o' || str[i] == 'O')
-	{
-	result[j] = '0';
-	}
-	else if (str[i] == 't' || str[i] == 'T')
-	{
-	result[j] = '7';
-	}
-	else if (str[i] == 'l' || str[i] == 'L')
-	{
-	result[j] = '1';
-	}
-	else
-	{
-	result[j] = str[i];
-	}
-	}
-	result[j] = '\0';
-	return (result);
+
+	return (s);
 }
