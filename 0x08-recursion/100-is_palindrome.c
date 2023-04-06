@@ -31,7 +31,7 @@ int _strlen(char *s)
 
 int _palindrome_confirm(char *s, int start, int stop)
 {
-	if (start <= stop)
+	if (start < stop)
 	{
 		return (1);
 	}
