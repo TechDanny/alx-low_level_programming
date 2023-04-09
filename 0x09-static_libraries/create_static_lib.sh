@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc -c *.c
+gcc -Wall -c *.c
 ar rc liballa.a *.o
