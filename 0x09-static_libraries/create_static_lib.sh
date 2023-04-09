@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc -Wall -c *.c
+gcc -Wall -Werror -Wextra -pedantic -c *.c
 ar -rc liballa.a *.o
