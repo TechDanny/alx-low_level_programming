@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	}
 	coins = coins + cents / 25;
 	cents = cents % 25;
-	coins = coins + cents /10;
+	coins = coins + cents / 10;
 	cents = cents % 10;
 	coins = coins + cents / 5;
 	cents = cents % 5;
