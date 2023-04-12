@@ -16,7 +16,8 @@ char *argstostr(int ac, char **av)
 	char *str;
 	int len;
 	int position;
-	int i
+	int i;
+	int j;
 
 	len = 0;
 	position = 0;
@@ -34,10 +35,10 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 
-	for (i = 0; i < ac; i++)
+	for (j = 0; j < ac; j++)
 	{
-		strcpy(str + position, av[i]);
-		position = position + strlen(av[i]);
+		strcpy(str + position, av[j]);
+		position = position + strlen(av[j]);
 		str[position++] = '\n';
 	}
 	return (str);
