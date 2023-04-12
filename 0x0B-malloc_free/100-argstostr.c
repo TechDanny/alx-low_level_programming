@@ -3,7 +3,7 @@
 #include<stdlib.h>
 
 /**
- * argstostr - concatenates all the 
+ * argstostr - concatenates all the
  * arguments of your program
  * @ac:integer value
  * @av:character
