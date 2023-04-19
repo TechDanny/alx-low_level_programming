@@ -16,6 +16,13 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 
 	for (; i < size; i++)
 	{
+		if (action == NULL)
+		{
+			exit(EXIT_FAILURE);
+		}
+		else
+		{
 		action(array[i]);
+		}
 	}
 }
