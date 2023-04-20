@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 	if (nBytes == 0)
 	{
 		putchar('\n');
-		exit(EXIT_FAILURE);
+		exit(EXIT_SUCCESS);
 	}
 	printf("%02x", *((unsigned char *) (main)));
 	for (; i < nBytes; i++)
