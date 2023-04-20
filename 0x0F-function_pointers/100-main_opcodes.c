@@ -13,6 +13,9 @@ int main(int argc, char *argv[])
 {
 	int i;
 	int nBytes;
+	unsigned char *ptr;
+
+	ptr = (unsigned char *)&main;
 
 	nBytes = atoi(argv[1]);
 
@@ -33,10 +36,10 @@ int main(int argc, char *argv[])
 		putchar('\n');
 		exit(EXIT_SUCCESS);
 	}
-	printf("%02x", *((unsigned char *) (main)));
 	for (; i < nBytes; i++)
 	{
-		printf("%02x ", *((unsigned char *) (main + i)));
+		printf("%02x ", *ptr);
+		ptr++;
 
 	}
 
