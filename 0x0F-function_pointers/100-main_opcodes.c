@@ -28,6 +28,11 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (2);
 	}
+	if (nBytes == 0)
+	{
+		putchar('\n');
+		exit(EXIT_FAILURE);
+	}
 	printf("%02x", *((unsigned char *) (main)));
 	for (; i < nBytes; i++)
 	{
