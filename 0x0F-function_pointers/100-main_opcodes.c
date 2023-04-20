@@ -6,7 +6,7 @@
  * @argc: number of elements
  * @argv:it is an array
  *
- * return: always an int
+ * Return: always an int
  */
 
 int main(int argc, char *argv[])
@@ -15,8 +15,8 @@ int main(int argc, char *argv[])
 	int nBytes;
 
 	nBytes = atoi(argv[1]);
-	
-	i =0;
+
+	i = 0;
 
 	if (argc != 2)
 	{
@@ -28,6 +28,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (2);
 	}
+	printf("%02x", *((unsigned char *) (main)));
 	for (; i < nBytes; i++)
 	{
 		printf("%02x ", *((unsigned char *) (main + i)));
@@ -36,5 +37,5 @@ int main(int argc, char *argv[])
 
 	printf("\n");
 
-	return 0;
+	return (0);
 }
