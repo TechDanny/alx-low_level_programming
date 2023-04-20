@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 
 	ptr = (unsigned char *)&main;
 
-	
+
 	i = 0;
 
 	if (argc != 2)
