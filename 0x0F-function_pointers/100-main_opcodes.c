@@ -17,8 +17,7 @@ int main(int argc, char *argv[])
 
 	ptr = (unsigned char *)&main;
 
-	nBytes = atoi(argv[1]);
-
+	
 	i = 0;
 
 	if (argc != 2)
@@ -26,6 +25,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+	nBytes = atoi(argv[1]);
 	if (nBytes < 0)
 	{
 		printf("Error\n");
