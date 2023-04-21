@@ -40,7 +40,10 @@ void print_all(const char * const format, ...)
 			continue;
 		}
 	if (format[i])
-	printf(",");
+	{
+	printf(", ");
 	}
+	}
+	va_end(counts);
 printf("\n");
 }
