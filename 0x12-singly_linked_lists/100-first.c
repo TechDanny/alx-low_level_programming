@@ -1,19 +1,14 @@
 #include <stdio.h>
 
+
+void __attribute__ ((constructor)) one(void);
+
 /**
- * print_before - it holds the constructor attribute
+ * one - prints before main function
  *
  */
 
-
-void print_before(void)__attribute__((constructor));
-
-/**
- * print_before - prints before main function
- *
- */
-
-void print_before(void)
+void one(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
