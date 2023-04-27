@@ -7,11 +7,11 @@
  * Return:number
  */
 
-size_t list_len(const list_t *h);
+size_t list_len(const list_t *h)
 {
-	int node_count;
+	int node_count = 0;
 
-	while (h)
+	while (h != NULL)
 	{
 		node_count++;
 		h = h->next;
