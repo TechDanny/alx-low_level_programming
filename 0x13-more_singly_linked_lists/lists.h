@@ -5,6 +5,12 @@
 #include <string.h>
 #include <stdio.h>
 
+/**
+ * struct listint_s - data structure file
+ * @n:data
+ * @next:address of first node
+ */
+
 typedef struct listint_s
 {
 	int n;
