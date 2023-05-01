@@ -2,7 +2,7 @@
 
 /**
  * sum_listint - returns the sum of all data
- * @address:stores the address of first node
+ * @head:stores the address of first node
  *
  * Return:sum of all data
  */
