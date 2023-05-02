@@ -39,11 +39,12 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		}
 		temp = temp->next;
 	}
-	if (temp == NULL)
+	newest = (listint_t *)malloc(sizeof(listint_t));
+	if (newest == NULL)
 	{
-		free(newest);
 		return (NULL);
 	}
+	newest->n = n;
 	newest->next = temp->next;
 	temp->next = newest;
 	return (newest);
