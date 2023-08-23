@@ -1,0 +1,25 @@
+#Makefile
+
+CFLAGS = -Wall -Werror -Wextra -pedantic
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+RM = rm -f
+
+all: $(OBJ)
+	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+
+#deletes all Emacs and vim temp files
+clean:
+	$(RM) *~ $(NAME)
+
+#deletes the object files
+oclean:
+	$(RM) $(OBJ)
+
+#deletes all Emacs, vim temp files, executable and objects
+fclean: clean oclean
+
+#forces recompilation of all source files
+re: fclean all
